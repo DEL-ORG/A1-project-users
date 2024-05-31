@@ -1,0 +1,7 @@
+---
+- name: Setup system, add repository, install package, configure firewall, and remove user
+  hosts: localhost #ubuntu_servers
+  roles:
+   - cmu-project
+  become: yes
+  gather_facts: yes
